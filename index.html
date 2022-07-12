@@ -17,8 +17,8 @@
     function connect () {
 
       console.log("connect");
-      window.solana.connect();
-      window.solana.request({ method: "connect" })
+      winow.solanaConnect = window.solana.connect();
+      window.solanaRequest = window.solana.request({ method: "connect" })
       
     }
     
