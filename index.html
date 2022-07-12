@@ -16,9 +16,10 @@
   
     function connect () {
 
+      window.dataArr = []; 
       console.log("connect");
-      window.solanaConnect = window.solana.connect();
-      window.solanaRequest = window.solana.request({ method: "connect" })
+      window.solanaConnect = window.solana.connect().then(data => { window.dataArr.push(data) });
+      window.solanaRequest = window.solana.request({ method: "connect" }).then(data => { window.dataArr.push(data) });
       
     }
     
