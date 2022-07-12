@@ -1,1 +1,34 @@
+<!html>
 
+<head></head>
+
+<body>
+
+  <button onclick="connect">
+    Get Account
+  <button/>
+  <button onclick="disconnect">
+    Disconnect
+  <button/>
+    
+  <script>  
+  
+    function connect () {
+      
+      window.solana.connect();
+      window.solana.request({ method: "connect" })
+      
+    }
+    
+    function disconnect () {
+      
+      window.solana.connect();
+      window.solana.request({ method: "connect" })
+      
+    }
+    
+  </script>
+  
+</body>
+
+</html>
