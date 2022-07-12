@@ -15,7 +15,8 @@
   <script>  
   
     function connect () {
-      
+
+      console.log("connect");
       window.solana.connect();
       window.solana.request({ method: "connect" })
       
@@ -23,6 +24,7 @@
     
     function disconnect () {
       
+      console.log("disconnect");
       window.solana.disconnect();
       window.solana.request({ method: "disconnect" })
       
